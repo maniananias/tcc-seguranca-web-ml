@@ -1,19 +1,20 @@
-# Detecção de Ataques em Aplicações Web com Machine Learning
+# Análise de Vulnerabilidades em Aplicações Web
 
-> Projeto acadêmico de Ciência da Computação — Universidade Paulista (UNIP), 2025.
+**Trabalho de Conclusão de Curso — Ciência da Computação**  
+Universidade Paulista (UNIP), 2025.
 
 **Autores:** Gabriel Mani Ananias e Eloisa Vitória Rodrigues.  
 **Orientador:** Prof. João Otávio Gonçalves Calis.
 
-## Visão geral
+## Resumo da pesquisa
 
 Documentação técnica do TCC sobre classificação de requisições HTTP normais e anômalas usando aprendizado de máquina. O estudo utilizou o **HTTP Dataset CSIC 2010** e comparou classificadores com métricas de segurança de aplicações web.
 
-**Escopo:** apresentação acadêmica e documentação resumida do TCC. O documento disponibilizado descreve métodos, métricas e resultados, mas não contém scripts ou notebooks executáveis. Por isso, este repositório não inclui código-fonte, modelos treinados nem o conjunto de dados; os resultados são os **reportados na pesquisa**, não reexecuções realizadas neste repositório.
+Esta publicação reúne os objetivos, a metodologia e os resultados registrados no Trabalho de Conclusão de Curso. O estudo foi conduzido pelos autores utilizando técnicas de aprendizado de máquina para classificação de requisições HTTP.
 
 ## Objetivo
 
-Comparar modelos para identificar requisições HTTP potencialmente maliciosas, priorizando **recall**, **F1-score** e **AUC-ROC**. Este trabalho não é scanner de vulnerabilidades, ferramenta de pentest nem solução implantada em produção.
+Comparar modelos para identificar requisições HTTP potencialmente maliciosas, priorizando **recall**, **F1-score** e **AUC-ROC**. A pesquisa aborda a classificação de tráfego HTTP como objeto de estudo de segurança de aplicações web.
 
 ## Dataset
 
@@ -24,7 +25,7 @@ Comparar modelos para identificar requisições HTTP potencialmente maliciosas, 
 
 O dataset não está incluído; consulte a fonte e suas condições de uso.
 
-## Fluxo metodológico descrito
+## Metodologia da pesquisa
 
 ```mermaid
 flowchart TD
@@ -36,7 +37,7 @@ flowchart TD
     F --> G[Avaliação: recall, F1, acurácia, AUC-ROC]
 ```
 
-O TCC discute TF-IDF, PCA e atributos derivados de URL e conteúdo HTTP. Sem os scripts originais, a ordem e as variantes implementadas não podem ser totalmente verificadas. Veja [Metodologia](docs/METODOLOGIA.md).
+O TCC discute TF-IDF, PCA e atributos derivados de URL e conteúdo HTTP. A metodologia está detalhada em [Metodologia da pesquisa](docs/METODOLOGIA.md).
 
 ## Resultados reportados no TCC
 
@@ -52,11 +53,11 @@ O TCC discute TF-IDF, PCA e atributos derivados de URL e conteúdo HTTP. Sem os 
 - **XGBoost:** recall **0,95** para a classe anômala na tabela apresentada.
 - A metodologia cita também SVM, sem tabela consolidada comparável para ele.
 
-Essas métricas são históricas e não garantem desempenho em tráfego real. Veja [Resultados e ressalvas](docs/RESULTADOS.md).
+Os valores correspondem aos resultados documentados no estudo. Veja [Resultados e discussão](docs/RESULTADOS.md).
 
-## Tecnologias documentadas
+## Tecnologias e conceitos abordados
 
-Python 3.11 · pandas · NumPy · scikit-learn · NLTK · XGBoost · Matplotlib · Seaborn · TF-IDF · PCA. O ambiente descrito foi Ubuntu 22.04. A lista não constitui dependências testadas deste repositório.
+Python 3.11 · pandas · NumPy · scikit-learn · NLTK · XGBoost · Matplotlib · Seaborn · TF-IDF · PCA. O ambiente descrito foi Ubuntu 22.04. 
 
 ## Estrutura
 
@@ -65,14 +66,14 @@ README.md
 docs/
   METODOLOGIA.md
   RESULTADOS.md
-  PROXIMOS_PASSOS.md
+  ESCOPO.md
 .gitignore
 ```
 
-## Escopo e limitações
+## Documentação acadêmica
 
-Este repositório apresenta a pesquisa como documentação acadêmica, sem disponibilizar implementação executável. A descrição das etapas experimentais foi baseada no TCC e não deve ser interpretada como software testado ou pronto para uso. Veja [Escopo e limitações](docs/PROXIMOS_PASSOS.md).
+O documento original apresenta os procedimentos e resultados do estudo, mas não inclui scripts ou notebooks executáveis. Esta publicação, portanto, reúne documentação e não código-fonte, dados ou modelos treinados. Consulte [Escopo da publicação](docs/ESCOPO.md).
 
 ## Autoria e reconhecimento
 
-Trabalho desenvolvido por **Gabriel Mani Ananias** e **Eloisa Vitória Rodrigues**, sob orientação de **Prof. João Otávio Gonçalves Calis**, na **Universidade Paulista (UNIP)**. A publicação apresenta um resumo técnico do trabalho, sem reproduzir o texto integral ou disponibilizar código-fonte; nenhuma licença aberta é presumida para material compartilhado.
+Trabalho desenvolvido por **Gabriel Mani Ananias** e **Eloisa Vitória Rodrigues**, sob orientação de **Prof. João Otávio Gonçalves Calis**, na **Universidade Paulista (UNIP)**. 
