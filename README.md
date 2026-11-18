@@ -9,7 +9,7 @@
 
 Documentação técnica do TCC sobre classificação de requisições HTTP normais e anômalas usando aprendizado de máquina. O estudo utilizou o **HTTP Dataset CSIC 2010** e comparou classificadores com métricas de segurança de aplicações web.
 
-**Situação:** portfólio documental, baseado no TCC. O **código-fonte original, os modelos treinados e os dados ainda não estão disponíveis neste repositório**. Resultados abaixo são reportados no trabalho e **não foram reproduzidos aqui**.
+**Escopo:** apresentação acadêmica e documentação resumida do TCC. O documento disponibilizado descreve métodos, métricas e resultados, mas não contém scripts ou notebooks executáveis. Por isso, este repositório não inclui código-fonte, modelos treinados nem o conjunto de dados; os resultados são os **reportados na pesquisa**, não reexecuções realizadas neste repositório.
 
 ## Objetivo
 
@@ -69,10 +69,10 @@ docs/
 .gitignore
 ```
 
-## Próximos passos
+## Escopo e limitações
 
-Para torná-lo executável, faltam os scripts ou notebooks originais, dependências verificadas, dados obtidos de fonte autorizada, execução de testes e alinhamento com a coautora para publicação de materiais compartilhados. Veja [Plano](docs/PROXIMOS_PASSOS.md).
+Este repositório apresenta a pesquisa como documentação acadêmica, sem disponibilizar implementação executável. A descrição das etapas experimentais foi baseada no TCC e não deve ser interpretada como software testado ou pronto para uso. Veja [Escopo e limitações](docs/PROXIMOS_PASSOS.md).
 
 ## Autoria e reconhecimento
 
-Trabalho desenvolvido por **Gabriel Mani Ananias** e **Eloisa Vitória Rodrigues**, sob orientação de **Prof. João Otávio Gonçalves Calis**, na **Universidade Paulista (UNIP)**. A adaptação disponibiliza apenas documentação resumida, não o texto integral nem código original; nenhuma licença aberta é presumida para material compartilhado.
+Trabalho desenvolvido por **Gabriel Mani Ananias** e **Eloisa Vitória Rodrigues**, sob orientação de **Prof. João Otávio Gonçalves Calis**, na **Universidade Paulista (UNIP)**. A publicação apresenta um resumo técnico do trabalho, sem reproduzir o texto integral ou disponibilizar código-fonte; nenhuma licença aberta é presumida para material compartilhado.
